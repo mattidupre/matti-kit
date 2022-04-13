@@ -4,9 +4,9 @@ import {
   getRelativeLocation,
   getTreeAtLocation,
 } from '@matti-kit/tree';
-import clonePayload from '~/lib/clonePayload';
 import { useSortedDragEvent } from '@matti-kit/drag';
 import buildPayloadFromTree from '../../../lib/buildPayloadFromTree';
+import clonePayload from '../../../lib/clonePayload';
 import ChangeContext from './ChangeContext';
 import useGetTreeByDragId from './useGetTreeByDragId';
 
