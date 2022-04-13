@@ -1,0 +1,10 @@
+{
+  "extends": "@matti-kit/config/tsconfig.frontend.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
+}

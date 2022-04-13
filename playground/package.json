@@ -1,0 +1,45 @@
+{
+  "name": "@matti-kit/playground",
+  "version": "0.0.1",
+  "main": "dist/main.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@emotion/react": "11.4.1",
+    "@emotion/styled": "^11.0.0",
+    "@reduxjs/toolkit": "1.6.1",
+    "@matti-kit/list": "*",
+    "@matti-kit/drag": "*",
+    "@matti-kit/utils": "*",
+    "@matti-kit/tree": "*",
+    "@testing-library/react": "^10.4.9",
+    "@testing-library/react-hooks": "^4.0.0",
+    "classnames": "2.3.1",
+    "core-js": "3.4.8",
+    "eslint-plugin-react": "^7.19.0",
+    "immutability-helper": "3.1.1",
+    "lodash": "4.17.21",
+    "material-colors": "1.2.6",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-merge-refs": "1.1.0",
+    "react-redux": "7.2.4",
+    "recoil": "0.0.10",
+    "redux": "4.1.1",
+    "reselect": "4.0.0",
+    "underscore": "1.12.0",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@matti-kit/config": "*",
+    "@testing-library/jest-dom": "5.14.1",
+    "acorn-jsx": "5.3.2",
+    "css-loader": "6.3.0",
+    "pptr-testing-library": "0.6.5",
+    "puppeteer": "10.2.0",
+    "react-dnd-test-utils": "14.0.1"
+  },
+  "scripts": {
+    "dev": "webpack --watch",
+    "test": "jest"
+  }
+}

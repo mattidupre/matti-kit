@@ -1,0 +1,7 @@
+{
+  "name": "@matti-kit/config",
+  "version": "0.0.1",
+  "dependencies": {
+    "find-yarn-workspace-root": "2.0.0"
+  }
+}

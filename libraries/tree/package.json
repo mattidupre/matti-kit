@@ -1,0 +1,12 @@
+{
+  "name": "@matti-kit/tree",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@matti-kit/config": "*"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

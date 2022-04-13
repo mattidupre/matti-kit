@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "strict": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "esModuleInterop": true
+  },
+  "exclude": ["**/node_modules", "**/dist"],
+  "files": ["./global.d.ts"]
+}

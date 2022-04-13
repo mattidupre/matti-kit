@@ -1,0 +1,11 @@
+{
+  "extends": "@matti-kit/config/tsconfig.frontend.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsxImportSource": "@emotion/react",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
+}
