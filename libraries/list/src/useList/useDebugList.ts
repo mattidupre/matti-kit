@@ -5,7 +5,8 @@ import useListRefs from './lib/useListRefs';
 import useListPositions from './lib/useListPositions';
 import useListTransform from './lib/useListTransform';
 
-import type { ListItemParsed, ListData, Direction } from '@matti-kit/drag';
+import type { ListItemParsed, ListData } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 
 type Options = {
   uid: ListData['uid'];

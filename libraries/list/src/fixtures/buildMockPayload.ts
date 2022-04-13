@@ -1,11 +1,11 @@
-import type { Payload } from '@matti-kit/drag';
+import type { ListPayload } from '~/types';
 
 type Config = [string] | [string, Array<Config>];
 
-function buildPayloads(currentConfig: Config, parent: Payload = null): Payload {
+function buildPayloads(currentConfig: Config, parent: ListPayload = null): ListPayload {
   const [id, childConfigs] =
     typeof currentConfig === 'string' ? [currentConfig, null] : currentConfig;
-  const payload: Payload = {
+  const payload: ListPayload = {
     direction: 'row',
     meta: { id },
     parent,

@@ -16,9 +16,10 @@ import ListDragNoop from './components/ListDragNoop';
 import ListOverlay from './components/ListOverlay';
 import ListPreview from './components/ListPreview';
 
-import type { Meta, Direction } from '@matti-kit/drag';
+import type { Meta } from '@matti-kit/drag';
 import type {
   Spacing,
+  Direction,
   OnListComponentChange,
   Accept,
   ListTreeValue,

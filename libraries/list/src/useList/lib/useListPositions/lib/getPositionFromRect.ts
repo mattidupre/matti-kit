@@ -1,4 +1,4 @@
-import type { Direction } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 import type { Rect, Position } from '../../../types';
 
 const getPositionFromRect = (direction: Direction, rect: Rect): Position => {

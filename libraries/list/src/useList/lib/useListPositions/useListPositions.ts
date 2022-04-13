@@ -4,7 +4,8 @@ import { getElBaseRect } from '@matti-kit/utils';
 import getPositionFromRect from './lib/getPositionFromRect';
 import getBoundingPosition from './lib/getBoundingPosition';
 
-import type { DragId, Direction } from '@matti-kit/drag';
+import type { DragId } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 import type { Position, Rect } from '../../types';
 
 type Options = {

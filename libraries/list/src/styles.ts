@@ -2,8 +2,7 @@ import { useMemo } from 'react';
 import fromDirection from '~/lib/fromDirection';
 
 import type { CSSProperties } from 'react';
-import type { Direction } from '@matti-kit/drag';
-import type { Spacing, Handle } from './types';
+import type { Direction, Spacing, Handle } from '~/types';
 
 type Options = {
   direction: Direction;

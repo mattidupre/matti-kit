@@ -2,7 +2,8 @@ import React from 'react';
 import { useStyles } from '@matti-kit/utils';
 import { useListDragHandleStyle } from '~/styles';
 
-import type { Direction, useDraggable } from '@matti-kit/drag';
+import type { useDraggable } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 
 type Props = {
   direction: Direction;

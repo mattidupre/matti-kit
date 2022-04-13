@@ -4,12 +4,13 @@ import mergeRefs from 'react-merge-refs';
 import { useDraggable } from '@matti-kit/drag';
 import ListDragHandle from './ListDragHandle';
 
-import type { DragId, Direction, Payload } from '@matti-kit/drag';
+import type { DragId } from '@matti-kit/drag';
+import type { Direction, ListPayload } from '~/types';
 
 type Props = {
   dragId: DragId;
   direction: Direction;
-  payload: Payload;
+  payload: ListPayload;
   handle?: boolean;
   disabled?: boolean;
   style?: React.CSSProperties;

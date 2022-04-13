@@ -1,5 +1,5 @@
 import type { FullTree } from '@matti-kit/tree';
-import type { DragId, Direction, Payload } from '@matti-kit/drag';
+import type { DragId, Payload } from '@matti-kit/drag';
 import type useList from '~/useList';
 
 export type ChangeAction = Parameters<
@@ -9,6 +9,8 @@ export type ChangeAction = Parameters<
 export type ListPayload = FullTree<Payload>;
 
 export type TreeLocation = Array<number>;
+
+export type Direction = 'row' | 'column';
 
 export type Spacing = number;
 

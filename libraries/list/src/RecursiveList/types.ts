@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
 import type { FullTree } from '@matti-kit/tree';
 import type { Assign } from 'utility-types';
-import type { Direction, Meta, Payload } from '@matti-kit/drag';
+import type { Meta } from '@matti-kit/drag';
+import type { Direction, ListPayload } from '~/types';
 
 export type RecursiveListTree<
   ParentValue extends Record<string, any> = {},
@@ -29,7 +30,7 @@ export type RecursiveListTree<
   >
 >;
 
-export type OnListChange = (payload: Payload) => void;
+export type OnListChange = (payload: ListPayload) => void;
 
 export type GetKeyFromMeta = (
   meta: Meta,

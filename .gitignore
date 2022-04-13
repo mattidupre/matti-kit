@@ -3,6 +3,7 @@
 dist
 yarn.lock
 yarn-error.log
+.mailmap
 
 # Logs
 logs

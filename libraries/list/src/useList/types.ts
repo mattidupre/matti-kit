@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react';
-import type { Direction, Payload, DragId } from '@matti-kit/drag';
+import type { Payload, DragId } from '@matti-kit/drag';
+import type { ListPayload, Direction } from '~/types';
 
 export type ListAction = 'INSERT' | 'DELETE' | 'REORDER';
 
@@ -16,7 +17,7 @@ export type Order = {
 };
 
 export type UseListOptions = {
-  listPayload: Payload;
+  listPayload: ListPayload;
   listDragId: DragId;
   childDragIds: Array<DragId>;
   direction: Direction;
@@ -95,7 +96,7 @@ export type Transform = (...args: Array<any>) => {
 export type OnListChange = (ev: {
   action: ListAction;
   listDragId: DragId;
-  listPayload: Payload;
+  listPayload: ListPayload;
   draggingDragId: DragId;
   draggingPayload: Payload | null;
   order: Order;

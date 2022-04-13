@@ -2,8 +2,7 @@ import React, { forwardRef } from 'react';
 import { useStyles } from '@matti-kit/utils';
 import { useListStyle } from '~/styles';
 
-import type { Direction } from '@matti-kit/drag';
-import type { Spacing } from '~/types';
+import type { Spacing, Direction } from '~/types';
 
 type Props = {
   direction: Direction;

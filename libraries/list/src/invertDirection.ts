@@ -1,4 +1,4 @@
-import type { Direction } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 
 const invertDirection = (direction: Direction): Direction => {
   if (direction === 'row') {

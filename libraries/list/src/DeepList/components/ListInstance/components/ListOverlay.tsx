@@ -2,8 +2,8 @@ import React from 'react';
 import { useDragOverlay } from '@matti-kit/drag';
 import StaticifiedList from '../../StaticifiedList';
 
-import type { DragId, Direction } from '@matti-kit/drag';
-import type { Spacing } from '../../../../types';
+import type { DragId } from '@matti-kit/drag';
+import type { Spacing, Direction } from '~/types';
 
 type Props = {
   listDragId: DragId;

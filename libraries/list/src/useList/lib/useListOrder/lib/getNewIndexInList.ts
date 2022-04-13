@@ -1,5 +1,5 @@
 /* eslint-disable no-lonely-if */
-import { Direction } from '@matti-kit/drag';
+import { Direction } from '~/types';
 
 type Options = {
   direction: Direction;

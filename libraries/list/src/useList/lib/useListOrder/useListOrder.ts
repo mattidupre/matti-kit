@@ -5,7 +5,8 @@ import { useIsDiff, usePersistentMemo } from '@matti-kit/utils';
 import getNewIndexInList from './lib/getNewIndexInList';
 import buildOrder from './lib/buildOrder';
 
-import type { Direction, DragId } from '@matti-kit/drag';
+import type { DragId } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 import type { Position, Rect, Order } from '../../types';
 
 import getPlacementFromRects from './lib/getPlacementFromRects';

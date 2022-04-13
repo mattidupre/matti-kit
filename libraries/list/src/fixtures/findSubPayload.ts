@@ -1,6 +1,6 @@
-import type { Payload } from '@matti-kit/drag';
+import type { ListPayload } from '~/types';
 
-function findSubPayload(currentPayload: Payload, id: string) {
+function findSubPayload(currentPayload: ListPayload, id: string) {
   if (currentPayload.meta.id === id) {
     return currentPayload;
   }

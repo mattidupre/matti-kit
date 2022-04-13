@@ -24,12 +24,12 @@ const RecursiveListParent: React.FC<Props> = function RecursiveListParent({
   // TODO: Eventually handle this at top and use React.memo() on this component.
   const handleListChange = useCallback(
     (newPayload) => {
+      console.log('newPayload', newPayload);
       const newTree = mapDownTree(newPayload, {
         callback: ({ direction, meta }) => ({
           listProps: { direction, meta },
         }),
       }) as RecursiveListTree;
-      console.log('newTree', newTree);
       newTree.parent = currentTree.parent;
 
       setRecursiveListState(newTree);

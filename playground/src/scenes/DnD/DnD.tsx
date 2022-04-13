@@ -29,54 +29,59 @@ const buildMockTree = (topDirection: 'ROW' | 'COLUMN') => {
   const tree: SimpleTree<{ name: string }, { key: string }> = {
     ...getParentValue('list_1'),
     children: [
-      {
-        ...getParentValue('list_2'),
-        children: [
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-        ],
-      },
-      {
-        ...getParentValue('list_3'),
-        children: [
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-        ],
-      },
-      {
-        ...getParentValue('list_4'),
-        children: [
-          { ...getChildValue() },
-          { ...getChildValue() },
-          {
-            ...getParentValue('list_5'),
-            children: [
-              { ...getChildValue() },
-              { ...getChildValue() },
-              { ...getChildValue() },
-              { ...getChildValue() },
-              { ...getChildValue() },
-            ],
-          },
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-        ],
-      },
-      {
-        ...getParentValue('list_6'),
-        children: [
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-          { ...getChildValue() },
-        ],
-      },
+      { ...getChildValue() },
+      { ...getChildValue() },
+      { ...getChildValue() },
+      { ...getChildValue() },
+      { ...getChildValue() },
+      // {
+      //   ...getParentValue('list_2'),
+      //   children: [
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //   ],
+      // },
+      // {
+      //   ...getParentValue('list_3'),
+      //   children: [
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //   ],
+      // },
+      // {
+      //   ...getParentValue('list_4'),
+      //   children: [
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     {
+      //       ...getParentValue('list_5'),
+      //       children: [
+      //         { ...getChildValue() },
+      //         { ...getChildValue() },
+      //         { ...getChildValue() },
+      //         { ...getChildValue() },
+      //         { ...getChildValue() },
+      //       ],
+      //     },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //   ],
+      // },
+      // {
+      //   ...getParentValue('list_6'),
+      //   children: [
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //     { ...getChildValue() },
+      //   ],
+      // },
     ],
   };
 

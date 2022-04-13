@@ -4,11 +4,11 @@ import {
   getTreeAtLocation,
 } from '@matti-kit/tree';
 
-import type { Payload } from '@matti-kit/drag';
+import type { ListPayload } from '~/types';
 
-const clonePayload = <PayloadType extends Payload>(
-  oldPayload: PayloadType,
-): PayloadType => {
+const clonePayload = (
+  oldPayload: ListPayload,
+): ListPayload => {
   const [oldTopPayload, location] = getTopTreeWithLocation(oldPayload);
   const newTopPayload = mapDownTree(oldTopPayload, {
     callback: (payloadValues) => ({

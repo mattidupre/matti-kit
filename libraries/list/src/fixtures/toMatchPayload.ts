@@ -1,17 +1,17 @@
-import type { Payload } from '@matti-kit/drag';
+import type { ListPayload } from '~/types';
 
-function getTopPayload(payload: Payload) {
+function getTopPayload(payload: ListPayload) {
   if (!payload.parent) {
     return payload;
   }
   return getTopPayload(payload.parent);
 }
 
-function stripPayload(payload: Payload) {
+function stripPayload(payload: ListPayload) {
   const clonedPayload = { ...payload };
   if (payload.parent) {
     clonedPayload.parent =
-      `REFERENCE ${payload.parent.meta.id}` as unknown as Payload;
+      `REFERENCE ${payload.parent.meta.id}` as unknown as ListPayload;
   }
   if (payload.children) {
     clonedPayload.children = payload.children.map((childPayload) =>
@@ -22,7 +22,7 @@ function stripPayload(payload: Payload) {
 }
 
 expect.extend({
-  toMatchPayload(receivedPayload: Payload, testPayload: Payload) {
+  toMatchPayload(receivedPayload: ListPayload, testPayload: ListPayload) {
     const strippedReceivedPayload = stripPayload(
       getTopPayload(receivedPayload),
     );

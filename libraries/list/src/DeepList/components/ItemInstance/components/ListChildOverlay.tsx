@@ -2,7 +2,8 @@ import React from 'react';
 import { useDragOverlay } from '@matti-kit/drag';
 import { StaticListChild } from '~/StaticList';
 
-import type { DragId, Direction } from '@matti-kit/drag';
+import type { DragId } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 
 type Props = {
   listChildDragId: DragId;

@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 import fromDirection from './fromDirection';
 
-import type { Direction } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 
 const setTransformAttribute = (
   direction: Direction,

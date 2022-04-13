@@ -5,8 +5,8 @@ import ChangeProvider from './components/ChangeProvider';
 
 import ListInstance from './components/ListInstance/ListInstance';
 
-import type { Meta, Direction } from '@matti-kit/drag';
-import type { Spacing, OnListComponentChange, Accept } from '../types';
+import type { Meta } from '@matti-kit/drag';
+import type { Spacing, OnListComponentChange, Accept, Direction } from '~/types';
 
 type Props = {
   meta: Meta;

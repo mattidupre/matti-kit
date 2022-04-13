@@ -1,7 +1,8 @@
 import React, { useCallback, useMemo } from 'react';
 import { useIsDiff, useIsDiffs } from '@matti-kit/utils';
 
-import type { DragId, Direction } from '@matti-kit/drag';
+import type { DragId } from '@matti-kit/drag';
+import type { Direction } from '~/types';
 import type {
   Position,
   ApplyTransform,
