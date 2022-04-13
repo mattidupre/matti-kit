@@ -6,9 +6,7 @@ import {
 
 import type { ListPayload } from '~/types';
 
-const clonePayload = (
-  oldPayload: ListPayload,
-): ListPayload => {
+const clonePayload = (oldPayload: ListPayload): ListPayload => {
   const [oldTopPayload, location] = getTopTreeWithLocation(oldPayload);
   const newTopPayload = mapDownTree(oldTopPayload, {
     callback: (payloadValues) => ({
